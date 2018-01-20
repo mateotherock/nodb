@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+
+.App-header {
+  background-color:grey;
+  height: 10vh;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.App-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+}
+.App-footer {
+  background-color:grey;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ----------------------------------------------- */
+
+.header-button {
+  background-color: skyblue;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+}
+.recipe {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border: 1px solid skyblue;
+  overflow-y: auto;
+  border-radius: 5%;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+.title {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.foodType {
+  color: orange;
+  text-align: center;
+}
+.recipeHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
