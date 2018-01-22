@@ -14,6 +14,7 @@ class RefsForm extends Component {
         return(
             <div>
                 <form
+                    className="filter"
                     onSubmit={this.handleSubmit}
                     ref={form => this.form = form}>
                     <p>Filter</p>

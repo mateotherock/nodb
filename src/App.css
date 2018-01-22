@@ -33,6 +33,24 @@
   color: white;
   display: flex;
 }
+.top {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+.addRecipe {
+  display: flex;
+  flex-direction: column;
+}
+.editRecipe {
+  display: flex;
+  flex-direction: column;
+}
 .recipe {
   width: 300px;
   height: 400px;

@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 
-class AddRecipe extends Component {
+class EditRecipe extends Component {
     constructor(props){
         super(props);
         this.state = {
+            id: '',
             image: '',
             title: '',
             foodType: '',
@@ -23,19 +24,28 @@ class AddRecipe extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-
-        const {addRecipe} =  this.form;
-
-        this.props.addRecipe(this.state)
+        
+        const {editRecipe} =  this.form;
+        let obj = this.state
+        let id = obj.id
+        delete obj.id
+        this.props.editRecipe(obj, id)
     }
     render(){
         return(
             <div>
                 <form
-                    className="addRecipe"
+                    className="editRecipe"
                     onSubmit={this.handleSubmit}
                     ref={form => this.form = form}>
-                    <p>Add Recipe</p>
+                    <p>Edit Recipe</p>
+                    <label>
+                        Id:
+                        <input type='text'
+                               name='id'
+                               value={this.state.id}
+                               onChange={this.handleInputChange}/>
+                    </label>
                     <label>
                         Image Link: 
                         <input type="text" 
@@ -85,4 +95,4 @@ class AddRecipe extends Component {
     }
 }
 
-export default AddRecipe;
+export default EditRecipe;
