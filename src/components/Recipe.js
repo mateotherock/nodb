@@ -3,18 +3,14 @@ import Ingredients from './Ingredients';
 import Instructions from './Instructions';
 
 class Recipe extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return(
             <div className="recipe">
                 <header className="recipeHeader">
                     <div className="id">ID : {this.props.id}</div>
                     <button className="delete" 
-                    // onClick={e => this.props.deleteRecipe(this.props.id)}
-                    >Delete</button>
+                    onClick={e => this.props.delete(this.props.id)}
+                    >X</button>
                 </header>
                 <div><img src={this.props.img}></img></div>
                 <div className="title">{this.props.title}</div>
