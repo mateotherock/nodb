@@ -10,7 +10,7 @@ class Recipe extends Component {
                     <div className="id">ID : {this.props.id}</div>
                     <button className="delete" 
                     onClick={e => this.props.delete(this.props.id)}
-                    >X</button>
+                    >x</button>
                 </header>
                 <div><img src={this.props.img}></img></div>
                 <div className="title">{this.props.title}</div>

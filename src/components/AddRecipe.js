@@ -27,6 +27,14 @@ class AddRecipe extends Component {
         const {addRecipe} =  this.form;
 
         this.props.addRecipe(this.state)
+        this.setState({
+            image: '',
+            title: '',
+            foodType: '',
+            ingredients: [],
+            instructions: [],
+            servings: ''
+        })
     }
     render(){
         return(

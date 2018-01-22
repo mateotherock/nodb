@@ -1,18 +1,26 @@
 import React, {Component} from 'react';
 
-class EditRecipe extends Component {
+class ImprovedAddRecipe extends Component {
     constructor(props){
         super(props);
         this.state = {
-            id: '',
             image: '',
             title: '',
             foodType: '',
-            ingredients: [],
-            instructions: [],
-            servings: ''
+            ingredients: 
+                {
+                    name: '',
+                    quantity: '',
+                },
+            instructions: 
+                {
+                    step: ''
+                },
+            servings: '',
         }
         this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleIngredientChange = this.handleIngredientChange.bind(this);
+        this.handleInstructionChange = this.handleInstructionChange.bind(this);
     }
     handleInputChange(event) {
         const target = event.target;
@@ -22,16 +30,23 @@ class EditRecipe extends Component {
             [name]:value
         })
     }
+    handleIngredientChange() {
+        this.setState({
+            ingredients: this.state.ingredients.concat([{name:'',quantity:''}])
+        })
+    }
+    handleInstructionChange() {
+        this.setState({
+            instructions: this.state.instructions.concat([{name:''}])
+        })
+    }
     handleSubmit = (e) => {
         e.preventDefault();
-        
-        const {editRecipe} =  this.form;
-        let obj = this.state
-        let id = obj.id
-        delete obj.id
-        this.props.editRecipe(obj, id)
+
+        const {addRecipe} =  this.form;
+
+        this.props.addRecipe(this.state)
         this.setState({
-            id: '',
             image: '',
             title: '',
             foodType: '',
@@ -44,17 +59,10 @@ class EditRecipe extends Component {
         return(
             <div>
                 <form
-                    className="editRecipe"
+                    className="addRecipe"
                     onSubmit={this.handleSubmit}
                     ref={form => this.form = form}>
-                    <p>Edit Recipe</p>
-                    <label>
-                        Id:
-                        <input type='text'
-                               name='id'
-                               value={this.state.id}
-                               onChange={this.handleInputChange}/>
-                    </label>
+                    <p>Add Recipe</p>
                     <label>
                         Image Link: 
                         <input type="text" 
@@ -104,4 +112,4 @@ class EditRecipe extends Component {
     }
 }
 
-export default EditRecipe;
+export default ImprovedAddRecipe;

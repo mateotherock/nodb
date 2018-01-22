@@ -19,6 +19,7 @@ class RefsForm extends Component {
                     ref={form => this.form = form}>
                     <p>Filter</p>
                     <RadioSet
+                        className="filter"
                         setName={'myFilter'}
                         setOptions={['Appetizer', 'Chicken', 'Beef', 'Soup', 'Side Dish', 'Dessert']}/>
                         <input type="submit" value="Submit"></input>
@@ -29,7 +30,7 @@ class RefsForm extends Component {
 }
 function RadioSet(props){
     return(
-        <div>
+        <div className="innerFilter">
             {props.setOptions.map(option => {
                 return (
                 <label

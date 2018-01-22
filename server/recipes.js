@@ -272,5 +272,197 @@ module.exports = [
             'Bake for about 10 minutes in the preheated oven, or until edges are nicely browned'
         ],
         servings: '24'
+    },
+    {    
+        id: 7,
+        image: 'http://images.media-allrecipes.com/userphotos/720x405/1052510.jpg',
+        title: 'Slow Cooker Taco Soup',
+        foodType: 'Soup',
+        ingredients: [
+            {
+                name: 'Ground beef',
+                quantity: '1 lbs'
+            },
+            {
+                name: 'Onion, chopped',
+                quantity: '1'
+            },
+            {
+                name: 'Chili beans',
+                quantity: '1 can'
+            },
+            {
+                name: 'Kidney beans',
+                quantity: '1 can'
+            },
+            {
+                name: 'Whole kernel corn',
+                quantity: '1 can'
+            },
+            {
+                name: 'Tomato sauce',
+                quantity: '1 can'
+            },
+            {
+                name: 'Water',
+                quantity: '2 cups'
+            },
+            {
+                name: 'Peeled and diced tomatoes',
+                quantity: '2 14.5 oz cans'
+            },
+            {
+                name: 'Diced green chile peppers',
+                quantity: '1 4 oz can'
+            },
+            {
+                name: 'Taco seasoning mix',
+                quantity: '1 1.25 oz package'
+            }
+        ],
+        instructions: [
+            'In a medium skillet, cook the ground beef until browned over medium heat. Drain, and set aside',
+            'Place the ground beef, onion, chili beans, kidney beans, corn, tomato sauce, water, diced tomatoes, green chile peppers and taco seasoning mix in a slow cooker',
+            'Mix to blend, and cook on Low setting for 8 hours'
+        ],
+        servings: '8'
+    },
+    {    
+        id: 8,
+        image: 'http://images.media-allrecipes.com/userphotos/720x405/4146078.jpg',
+        title: 'Roasted garlic cauliflower',
+        foodType: 'Side Dish',
+        ingredients: [
+            {
+                name: 'Minced garlic',
+                quantity: '2 tbls'
+            },
+            {
+                name: 'Olive oil',
+                quantity: '3 tbls'
+            },
+            {
+                name: 'Large head cauliflower',
+                quantity: '1'
+            },
+            {
+                name: 'Parmesan cheese',
+                quantity: '1/3 cup'
+            },
+            {
+                name: 'Chopped fresh parsley',
+                quantity: '1 tbls'
+            }
+        ],
+        instructions: [
+            'Preheat the oven to 450 degrees F. Grease a large casserole dish',
+            'Place the olive oil and garlic in a large resealable bag. Add cauliflower, and shake to mix',
+            'Pour into the prepared casserole dish, and season with salt and pepper to taste',
+            'Bake for 25 minutes, stirring halfway through',
+            ' Top with Parmesan cheese and parsley, and broil for 3 to 5 minutes, until golden brown'
+        ],
+        servings: '6'
+    },
+    {    
+        id: 9,
+        image: 'http://images.media-allrecipes.com/userphotos/720x405/1130307.jpg',
+        title: 'Too much chocolate cake',
+        foodType: 'Dessert',
+        ingredients: [
+            {
+                name: "Devil's food cake mix",
+                quantity: '1 package'
+            },
+            {
+                name: 'Instant chocolate pudding mix',
+                quantity: '1 package'
+            },
+            {
+                name: 'Sour cream',
+                quantity: '1 cup'
+            },
+            {
+                name: 'Vegetable oil',
+                quantity: '1 cup'
+            },
+            {
+                name: 'Eggs',
+                quantity: '4'
+            },
+            {
+                name: 'Warm water',
+                quantity: '1/2 cup'
+            },
+            {
+                name: 'Semisweet chocolate chips',
+                quantity: '2 cups'
+            }
+        ],
+        instructions: [
+            'Preheat oven to 350 degrees F',
+            'In a large bowl, mix together the cake and pudding mixes, sour cream, oil, beaten eggs and water',
+            'Stir in the chocolate chips and pour batter into a well greased 12 cup bundt pan',
+            'Bake for 50 to 55 minutes, or until top is springy to the touch and a wooden toothpick inserted comes out clean',
+            'Cool cake thoroughly in pan at least an hour and a half before inverting onto a plate',
+            'If desired, dust the cake with powdered sugar'
+        ],
+        servings: '12'
+    },
+    {    
+        id: 10,
+        image: 'http://images.media-allrecipes.com/userphotos/720x405/4532409.jpg',
+        title: 'Chinese Pepper Steak',
+        foodType: 'Beef',
+        ingredients: [
+            {
+                name: 'Top sirloin steak',
+                quantity: '1 lbs'
+            },
+            {
+                name: 'Soy sauce',
+                quantity: '1/4 cup'
+            },
+            {
+                name: 'White sugar',
+                quantity: '2 tbls'
+            },
+            {
+                name: 'Cornstarch',
+                quantity: '2 tbls'
+            },
+            {
+                name: 'Ground ginger',
+                quantity: '1/2 tsp'
+            },
+            {
+                name: 'Vegetable oil',
+                quantity: '3 tbls'
+            },
+            {
+                name: 'Red onion',
+                quantity: '1'
+            },
+            {
+                name: 'Green bell pepper',
+                quantity: '1'
+            },
+            {
+                name: 'Tomatoes',
+                quantity: '2'
+            }
+        ],
+        instructions: [
+            'Slice the steak into 1/2-inch thick slices across the grain',
+            'Whisk together soy sauce, sugar, cornstarch, and ginger in a bowl until the sugar has dissolved and the mixture is smooth',
+            'Place the steak slices into the marinade, and stir until well-coated',
+            'Heat 1 tablespoon of vegetable oil in a wok or large skillet over medium-high heat, and place 1/3 of the steak strips into the hot oil',
+            'Cook and stir until the beef is well-browned, about 3 minutes, and remove the beef from the wok to a bowl',
+            'Repeat twice more, with the remaining beef, and set the cooked beef aside',
+            'Return all the cooked beef to the hot wok, and stir in the onion',
+            'Toss the beef and onion together until the onion begins to soften, about 2 minutes, then stir in the green pepper',
+            'Cook and stir the mixture until the pepper has turned bright green and started to become tender, about 2 minutes',
+            'Add the tomatoes, stir everything together, and serve'
+        ],
+        servings: '4'
     }
 ]
